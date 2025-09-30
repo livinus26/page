@@ -1,166 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
 }
+
 
 .main{
-   width: 100%; 
-   background-image: url(./images/peter-broomfield-m3m-lnR90uM-unsplash.jpg);
-   background-position: center;
-   background-size: cover;
-   height: 100vh;
-}
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 
-.navbar{
-   width: 1200px; 
-   height: 75px;
-   margin: auto;
-}
-
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
 }
 
 .logo{
-    color: orange;
-    font-size: 35px;
-    font-family: Arial;
-    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: lightgreen;
 }
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-
-}
-
-ul{
-    float: left;
+.navbar{
+    width: 90%;
+    max-width:1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
 }
 
-ul li{
-    list-style: none;
-    margin-left:67px ;
-    margin-top: 27px;
-    font-size: 14px;
+
+.menu ul a{
+    color: white;
+    float: left;
+    text-decoration: none;
    
 
-
 }
-
-ul li a{
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-
-
-}
-
-ul li a:hover{
+.menu ul a:hover{
     text-decoration: underline;
-    color: orange;
+    color: lightgreen;
 }
 
-.search{
-    width:330px ;
-    float: left;
-    margin-left: 270px;
-    
-}
 
-.srch{
-    font-family: 'Times New Roman', Times, serif;
-    width: 200px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid orange;
-    border-radius: 10px;
-    margin-top: 13px;
-    color: #fff;
-    font-size: 16px;
-    border-right: none;
-    float: left;
-    padding: 10px;
+.menu ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
 
 }
 
-.btn{
-    width: 100;
-    height: 40px;
-    background-color: orange;
-    border: 2px solid orange;
-    margin-top: 13px;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 10px;
 
-}
-
-.btn:focus{
-    outline: none;
-}
-
-.srch:focus{
-    outline: none;
-}
-
-.content {
-    color: #fff;
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background-color: #ff7200;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4 ease;
-
-}
-
-.content a{
-    text-decoration:none;
-    color: black;
-    transition: .3 ease;
-}
-
-.cn:hover{
-    background-color: white;
-}
-
-.content span{
-    color: #ff7200;
-    font-size: 60px;
-}
